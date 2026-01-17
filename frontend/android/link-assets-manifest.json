@@ -1,0 +1,25 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/assets/fonts/FuzzyBubbles-Bold.ttf",
+      "sha1": "9b8193b6719362c1a948dfb5e2cfef50b32499d5"
+    },
+    {
+      "path": "src/assets/fonts/FuzzyBubbles-Regular.ttf",
+      "sha1": "fda27767bb1b719b8f8ad5b85c7a83fb2818d340"
+    },
+    {
+      "path": "src/assets/fonts/Raleway-ExtraBold.ttf",
+      "sha1": "4205b551172092ee7b23cc884aa9cddaef97e624"
+    },
+    {
+      "path": "src/assets/fonts/Roboto-Black.ttf",
+      "sha1": "d1678489a8d5645f16486ec52d77b651ff0bf327"
+    },
+    {
+      "path": "src/assets/fonts/Roboto-Bold.ttf",
+      "sha1": "783de2321d7e6d21f880a10437a9f2c7b45ed198"
+    }
+  ]
+}
