@@ -19,7 +19,7 @@ Dengan pendekatan mobile app, sistem absensi menjadi lebih fleksibel, cepat, dan
 
 ## 🔗 Repository and Youtube Video
 - https://github.com/FaylenAmber/mobile-app_v2.git
-- (Video Youtube - Coming Soon)
+- https://youtu.be/HMNTRzTeprQ
 
 ---
 
