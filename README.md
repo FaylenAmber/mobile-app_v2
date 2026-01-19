@@ -29,7 +29,9 @@ Proyek ini terdiri dari dua folder utama:
 ```
 mobile-app/
 ├── frontend/    # React Native application
-└── backend/     # Express.js server
+├── backend/     # Express.js server
+└── database/    # .sql file
+
 ```
 
 ---
