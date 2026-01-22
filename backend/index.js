@@ -149,7 +149,7 @@ app.get('/api/absensi/today', (req, res) => {
     JOIN buruh b ON a.buruh_id = b.id
     LEFT JOIN mandor m ON b.mandor_id = m.id
     WHERE a.tanggal = CURDATE()
-    ORDER BY a.status, b.nama`,
+    ORDER BY a.updated_at DESC`,
     (err, result) => {
       if (err) return res.status(500).json(err);
       res.json(result);
@@ -206,7 +206,7 @@ app.get('/api/absensi/date/:tanggal', (req, res) => {
     JOIN buruh b ON a.buruh_id = b.id
     LEFT JOIN mandor m ON b.mandor_id = m.id
     WHERE a.tanggal = ?
-    ORDER BY a.status, b.nama`,
+    ORDER BY a.updated_at DESC, a.status, b.nama`,
     [req.params.tanggal],
     (err, result) => {
       if (err) return res.status(500).json(err);

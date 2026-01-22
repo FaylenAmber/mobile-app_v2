@@ -42,6 +42,25 @@ export default function HomePage() {
         <StatCard title="Jumlah Izin" value={stats.izin + stats.alpha} />
       </View>
 
+      {absensiList.length > 0 && (
+        <View style={styles.highlightCard}>
+          <Text style={styles.highlightTitle}>Absen Terakhir</Text>
+          <Text style={styles.highlightName}>
+            {absensiList[0].buruh_nama}
+          </Text>
+          <Text style={styles.highlightSub}>
+            {absensiList[0].mandor_nama || "Buruh Lepas"}
+          </Text>
+          <View style={[
+            styles.highlightBadge,
+          ]}>
+            <Text style={{ color: "#fff", fontWeight: "600" }}>
+              {absensiList[0].status.toUpperCase()}
+            </Text>
+          </View>
+        </View>
+      )}
+
       <View style={styles.rekapContainer}>
         <Text style={styles.rekapTitle}>Rekap Kehadiran Hari Ini</Text>
 
@@ -122,5 +141,34 @@ const styles = StyleSheet.create({
     color: "#999",
     textAlign: "center",
     marginTop: 30,
+  },
+  highlightCard: {
+    padding: 14,
+    borderRadius: 10,
+    backgroundColor: "#F9FAFB",
+    borderWidth: 1,
+    borderColor: "#E5E7EB",
+    marginBottom: 12,
+  },
+  highlightTitle: {
+    fontSize: 13,
+    color: "#666",
+    marginBottom: 6,
+  },
+  highlightName: {
+    fontSize: 16,
+    fontWeight: "700",
+  },
+  highlightSub: {
+    fontSize: 13,
+    color: "#777",
+    marginBottom: 6,
+  },
+  highlightBadge: {
+    alignSelf: "flex-start",
+    paddingHorizontal: 10,
+    paddingVertical: 4,
+    borderRadius: 12,
+    backgroundColor: "#4CAF50",
   },
 });

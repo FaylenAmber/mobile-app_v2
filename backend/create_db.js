@@ -47,6 +47,7 @@ db.query(
         buruh_id INT NOT NULL,
         tanggal DATE NOT NULL,
         status ENUM('hadir','izin','alpha') NOT NULL,
+        updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
         FOREIGN KEY (buruh_id) REFERENCES buruh(id)
         ON DELETE CASCADE,
         UNIQUE KEY unique_buruh_tanggal (buruh_id, tanggal)
